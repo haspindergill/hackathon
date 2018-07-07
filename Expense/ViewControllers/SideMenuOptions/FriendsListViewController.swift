@@ -125,7 +125,7 @@ extension FriendsListViewController{
     @IBAction func actionAdd(_ sender: Any) {
         let alert = UIAlertController(title: "Add Friend", message: "Enter a his/her username", preferredStyle: .alert)
         alert.addTextField { (textField) in
-            textField.placeholder = "Username (case insensitive)"
+            textField.placeholder = "Username (case sensitive)"
         }
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak alert] (_) in
             let textField = alert?.textFields![0]
