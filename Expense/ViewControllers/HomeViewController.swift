@@ -94,7 +94,7 @@ class HomeViewController: UIViewController,UNUserNotificationCenterDelegate {
                     content.sound = UNNotificationSound.default()
                     
                     // Deliver the notification in five seconds.
-                    let trigger = UNTimeIntervalNotificationTrigger.init(timeInterval: 60, repeats: false)
+                    let trigger = UNTimeIntervalNotificationTrigger.init(timeInterval: 20, repeats: false)
                     let request = UNNotificationRequest.init(identifier: "FiveSecond", content: content, trigger: trigger)
                     UNUserNotificationCenter.current().delegate = self
 
